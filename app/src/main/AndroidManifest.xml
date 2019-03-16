@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wifi.android.runwifipassword">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/dd3da883a1e4"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!--&lt;!&ndash; 您从百度网站获取的APP KEY，根据实际您的APP申请的APP_KEY进行修改 &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="BaiduMobAd_STAT_ID"-->
+        <!--android:value="0aa6f12218" /> &lt;!&ndash; abcd1234 &ndash;&gt;-->
+        <!--&lt;!&ndash; 渠道商编号 &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="BaiduMobAd_CHANNEL"-->
+        <!--android:value="Baidu Market" />-->
+
+        <!--&lt;!&ndash; 是否开启错误日志统计，默认为false &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="BaiduMobAd_EXCEPTION_LOG"-->
+        <!--android:value="true" />-->
+        <!--&lt;!&ndash; 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="BaiduMobAd_SEND_STRATEGY"-->
+        <!--android:value="APP_START" />-->
+        <!--&lt;!&ndash; 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 &ndash;&gt;-->
+        <!--&lt;!&ndash; <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> &ndash;&gt;-->
+        <!--&lt;!&ndash; 日志仅在wifi网络下发送，默认为false &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="BaiduMobAd_ONLY_WIFI"-->
+        <!--android:value="false" />-->
+        <!--&lt;!&ndash; 是否获取基站位置信息 ,默认为true &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="BaiduMobAd_CELL_LOCATION"-->
+        <!--android:value="true" />-->
+        <!--&lt;!&ndash; 是否获取GPS位置信息，默认为true &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="BaiduMobAd_GPS_LOCATION"-->
+        <!--android:value="true" />-->
+        <!--&lt;!&ndash; 是否获取WIFI位置信息，默认为true &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="BaiduMobAd_WIFI_LOCATION"-->
+        <!--android:value="true" />-->
+
+
+        <!--<meta-data-->
+        <!--android:name="y_key"-->
+        <!--android:value="6f5f9c64467a90f2d1ece2a70f89fb83" />-->
+        <!--<meta-data-->
+        <!--android:name="y_ch"-->
+        <!--android:value="official" />-->
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WifiCrackActivity" />
+        <!--<activity-->
+            <!--android:name="com.yow.YoA"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:theme="@android:style/Theme.NoTitleBar" />-->
+
+        <!--<service android:name="com.yow.YoS" />-->
+
+        <activity android:name=".CrackPasswordLookActivity" />
+        <activity android:name=".IntegralMainActivity" />
+        <activity
+            android:name=".WifiCrackActivitySimple"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity-->
+        <!--android:name=".BaActivity"-->
+        <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+        <!--android:excludeFromRecents="true"-->
+        <!--android:exported="true"></activity>-->
+
+        <!--<service android:name=".BaService" />-->
+
+        <!--<activity-->
+        <!--android:name=".push.DActivity"-->
+        <!--android:excludeFromRecents="true"-->
+        <!--android:exported="true"></activity>-->
+        <!--<activity-->
+        <!--android:name=".push.LActivity"-->
+        <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+        <!--android:excludeFromRecents="true"-->
+        <!--android:exported="true"></activity>-->
+        <!--<activity-->
+        <!--android:name=".push.HActivity"-->
+        <!--android:configChanges="orientation|screenSize|keyboardHidden"-->
+        <!--android:excludeFromRecents="true"-->
+        <!--android:exported="true"></activity>-->
+
+        <!--<service android:name=".push.OService" />-->
+
+        <activity android:name=".WifiPasswordLookActivity"></activity>
+
+    </application>
+
+</manifest>
