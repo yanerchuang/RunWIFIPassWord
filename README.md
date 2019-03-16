@@ -1,2 +1,1 @@
-# RunWIFIPassWo
-这是一款WiFi破解的app
+连接wifi的工具
